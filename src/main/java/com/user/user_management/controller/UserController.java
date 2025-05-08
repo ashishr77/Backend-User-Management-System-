@@ -1,45 +1,3 @@
-//package com.user.user_management.controller;
-//
-//import com.user.user_management.model.User;
-//import com.user.user_management.repository.UserRepository;
-//import lombok.AllArgsConstructor;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.web.bind.annotation.*;
-//
-//import java.util.List;
-//
-//@AllArgsConstructor
-//@RestController
-//@RequestMapping(path = "/api")
-//@CrossOrigin("http://localhost:3000")
-//public class userController {
-//
-//    @Autowired
-//    private UserRepository userRepository;
-//
-//    @GetMapping("/users")
-//    List<User> getAllUsers(){
-//        return userRepository.findAll();
-//    }
-//
-//    @GetMapping("/")
-//    String Greeting(){
-//        return "<h1>Hello Badshah<h1/>";
-//    }
-//
-//    @PostMapping("/user")
-//    User saveUser(@RequestBody User user){
-//        return userRepository.save(user);
-//    }
-//
-//    @GetMapping("/users/{id}")
-//    User getUserById(@PathVariable Long id){
-//        return userRepository.findById(id).orElseThrow(()->new IllegalArgumentException("NO Data Found"));
-//    }
-//
-//
-//}
-
 package com.user.user_management.controller;
 
 import com.user.user_management.model.User;
@@ -67,11 +25,6 @@ public class UserController {
     @GetMapping("/users")
     List<User>getAllUsers() {
         return userRepository.findAll();
-    }
-
-    @GetMapping("/")
-    String greeting() {
-        return "<h1>Hello Badshah</h1>";
     }
 
     @PostMapping("/user")

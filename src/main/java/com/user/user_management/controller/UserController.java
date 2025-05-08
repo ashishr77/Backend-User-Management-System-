@@ -52,7 +52,7 @@ import org.springframework.web.server.ResponseStatusException;
 import java.util.List;
 
 @RestController
-@CrossOrigin("https://frontend-user-management-system-one.vercel.app")
+@CrossOrigin("https://frontend-user-management-system-one.vercel.app/")
 //@RequestMapping(path = "/api")
 public class UserController {
 
